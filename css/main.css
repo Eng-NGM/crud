@@ -1,0 +1,64 @@
+*::before,
+::after {
+	box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Saira+Condensed:wght@300;400;500;600;700;800&display=swap");
+body {
+	margin: 0;
+	background-color: bisque;
+	font-family: "PT Sans Caption", sans-serif;
+}
+h1 {
+	font-size: 50px;
+	font-family: "Pacifico", cursive;
+	color: #352e28;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+h1::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	left: 0;
+	bottom: 30px;
+	background-color: #fec260;
+	transition: height 0.3s;
+	z-index: -1;
+}
+h1:hover::before {
+	height: 50%;
+}
+h2 {
+	font-family: "Righteous", cursive;
+	font-size: 25px;
+	z-index: 3;
+	/* background-color: linear-gradient(to right, #3ca55c, #b5ac49);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+}
+.form-control:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: #d99c39;
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.green {
+	background-color: #3ca55c;
+}
+.red {
+	background-color: crimson;
+}
+.brown,
+.brown:hover {
+	background-color: #bb4120;
+	color: #fff;
+}
+.line {
+	border-top: #212529 2px dotted;
+	padding-top: 50px;
+}
